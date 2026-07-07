@@ -1,0 +1,446 @@
+/* RESET */
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* GENERAL PAGE STYLE */
+
+body {
+
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+
+}
+
+
+/*  HERO SECTION */
+
+
+.hero {
+
+    height: 100vh;
+
+    background-image: url("your-image.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    position: relative;
+
+    padding: 20px;
+
+}
+
+/* Overlay */
+
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: rgba(0,0,0,0.5);
+
+}
+
+/* content above overlay */
+
+.hero h1,
+.hero p,
+.hero button {
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+
+/* Hero text */
+
+.hero h1 {
+
+    font-size: 2.5rem;
+
+    margin-bottom: 15px;
+
+}
+
+.hero p {
+
+    font-size: 1.1rem;
+
+    margin-bottom: 20px;
+
+}
+
+/* BUTTONS */
+
+
+button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #4a90e2;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+}
+
+button:hover {
+
+    background-color: #357bd8;
+
+}
+
+/* Primary Button */
+
+.primary-btn {
+
+    background-color: blue;
+
+}
+
+.primary-btn:hover {
+
+    background-color: darkblue;
+
+}
+
+/* Secondary Button */
+
+.secondary-btn {
+
+    background-color: white;
+
+    color: blue;
+
+    border: 2px solid blue;
+
+}
+
+.secondary-btn:hover {
+
+    background-color: blue;
+
+    color: white;
+
+}
+
+/* Danger Button */
+
+.danger-btn {
+
+    background-color: red;
+
+}
+
+.danger-btn:hover {
+
+    background-color: darkred;
+
+}
+
+/* Disabled Button */
+
+.disabled-btn {
+
+    background-color: lightgray;
+
+    color: gray;
+
+    cursor: not-allowed;
+
+    opacity: 0.7;
+
+}
+
+/* PROFILE CARD */
+
+.card {
+
+    width: 280px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    transition: 0.3s ease;
+
+    margin: 40px auto;
+
+}
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+
+}
+
+/* Image */
+
+.card img {
+
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+
+}
+
+/* Card content */
+
+.card-content {
+
+    padding: 20px;
+
+}
+
+.card-content h2 {
+
+    margin-bottom: 10px;
+
+    color: #333;
+
+}
+
+.card-content p {
+
+    color: #666;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+
+}
+
+/* Tags */
+
+
+.tags {
+
+    margin-bottom: 20px;
+
+}
+
+.tags span {
+
+    display: inline-block;
+
+    background-color: #e8f0fe;
+
+    color: #1a73e8;
+
+    padding: 6px 12px;
+
+    margin-right: 8px;
+
+    margin-bottom: 8px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+}
+
+/* CONTACT FORM */
+
+
+.contact {
+
+    max-width: 400px;
+
+    margin: 40px auto;
+
+    padding: 20px;
+
+}
+
+input,
+textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 10px 0;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+}
+
+input:focus,
+textarea:focus {
+
+    border-color: #4a90e2;
+
+    outline: none;
+
+    box-shadow: 0 0 5px rgba(74,144,226,0.5);
+
+}
+
+input:invalid,
+textarea:invalid {
+
+    border-color: red;
+
+}
+
+/* FOOTER */
+
+
+.footer {
+
+    background-color: #222;
+
+    color: white;
+
+    padding: 40px 20px;
+
+}
+
+.footer-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 30px;
+
+}
+
+.footer-column {
+
+    padding: 10px;
+
+}
+
+.footer-column h3 {
+
+    margin-bottom: 15px;
+
+}
+
+.footer-column p {
+
+    line-height: 1.6;
+
+}
+
+.footer-column ul {
+
+    list-style: none;
+
+    padding: 0;
+
+}
+
+.footer-column li {
+
+    margin-bottom: 10px;
+
+}
+
+.footer-column a {
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+.footer-column a:hover {
+
+    text-decoration: underline;
+
+}
+
+/* Copyright */
+
+.footer-bottom {
+
+    text-align:center;
+
+    border-top:1px solid gray;
+
+    margin-top:30px;
+
+    padding-top:20px;
+
+}
+
+/* Tablet */
+
+@media(max-width:768px){
+
+
+    .footer-container {
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+
+}
+
+/* Mobile */
+
+@media(max-width:480px){
+
+
+    .footer-container {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .hero h1 {
+
+        font-size:2rem;
+
+    }
+
+
+}
